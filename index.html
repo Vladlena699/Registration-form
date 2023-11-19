@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+	<header class="header">
+		<h1 id="title">freeCodeCamp Survey Form</h1>
+		<p id="description" class="description center">Thank you for taking the time to help us improve the platform </p>
+	</header>
+	<form id="survey-form">
+		<label for="name-label" id="name-label">Name <input id="name" name="name" type="text" required
+				placeholder="Enter your name" /></label>
+		<label for="email-label" id="email-label">Email <input id="email" name="email" type="email" required
+				placeholder="Enter your email" /></label>
+		<label for="number-label" id="number-label">Age
+			(optional) <input id="number" name="age" type="number" min="10" max="99" required placeholder="Age" /> </label>
+		<label for="referrer">Which option best describes your current role?
+			<select id="dropdown" name="referrer">
+				<option value="Select">Select current role</option>
+				<option value="Student">Student</option>
+				<option value=">fulltime">Full time job</option>
+				<option value="learner">Full Time Learner</option>
+				<option value="preferNo">Prefer not to say</option>
+				<option value="other">Other</option>
+			</select>
+		</label>
+		<fieldset>
+			<div class="form-group">
+				<legend>Would you recommend freeCodeCamp to a friend?</legend>
+				<label for="definitely-variant"><input id="definitely-variant" type="radio" name="variant-type"
+						class="inline" value="variant" checked /> Definitely</label>
+				<label for="maybe-variant"><input id="maybe-variant" type="radio" name="variant-type" class="inline"
+						value="variant" /> Maybe</label>
+				<label for="Notsure-variant"><input id="Notsure-variant" type="radio" name="variant-type" class="inline"
+						value="variant" /> Not sure</label>
+			</div>
+			<div class="form-group">
+				<label for="referrer">How did you hear about us?
+					<select id="dropdown" name="referrer">
+						<option value="">(select on option)</option>
+						<option value="1">Challenges</option>
+						<option value="2">Projects</option>
+						<option value="3">Community</option>
+						<option value="4">Open Source</option>
+					</select>
+				</label>
+			</div>
+			<fieldset>
+				<div class="form-group">
+					<legend>What would you like to see improved? (Check all that apply)</legend>
+					<label for="FEP"><input id="fep" type="checkbox" name="chec" value="fep" class="inline"
+							checked />Front-end Projects</label>
+					<label for="BEP"><input id="bep" type="checkbox" name="chec" value="bep" class="inline"
+							checked />Back-end Projects</label>
+					<label for="Visual"><input id="Visual" type="checkbox" class="inline" name="chec" value="Visual"
+							checked />Data Visualization</label>
+					<label for="Challenges"><input id="Challenges" type="checkbox" class="inline" name="chec"
+							value="Challenges" checked />Challenges</label>
+			</fieldset>
+			<label for="bio">Any comments or suggestions?
+				<textarea id="bio" name="bio" rows="5" cols="60" placeholder="Enter your comment here..."></textarea>
+			</label>
+		</fieldset>
+		<input id="submit" type="submit" value="Submit" />
+	</form>
+</body>
+
+</html>
